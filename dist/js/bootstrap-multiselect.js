@@ -155,6 +155,11 @@
 
         this.options.multiple = this.$select.attr('multiple') === "multiple";
         this.options.onChange = $.proxy(this.options.onChange, this);
+        this.options.onBeforeChange = $.proxy(this.options.onBeforeChange, this);
+        this.options.onBeforeBuild = $.proxy(this.options.onBeforeBuild, this);
+        this.options.onAfterBuild = $.proxy(this.options.onAfterBuild, this);
+        this.options.onBeforeRefresh = $.proxy(this.options.onBeforeRefresh, this);
+        this.options.onAfterRefresh = $.proxy(this.options.onAfterRefresh, this);
         this.options.onDropdownShow = $.proxy(this.options.onDropdownShow, this);
         this.options.onDropdownHide = $.proxy(this.options.onDropdownHide, this);
         this.options.onDropdownShown = $.proxy(this.options.onDropdownShown, this);
